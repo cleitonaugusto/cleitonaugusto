@@ -9,6 +9,16 @@ limits — the discipline that separates software that *looks* right from softwa
 
 ---
 
+### 🔬 Available for hire — Independent validation for ML-in-science
+
+I audit whether an ML-for-science model **beats a trivial baseline in a blind holdout** —
+before an investor, a pharma partner, or your own team bets on it. I built the tooling by
+turning it on my *own* research first: it failed **0 of 5**, and I publish that.
+
+**→ [Is your model real?](https://cleitonaugusto.github.io/validation/)**
+
+---
+
 ### 🔧 Projects
 
 - **[nqf-lint](https://github.com/cleitonaugusto/nqf-lint)** — pre-flight linter for
@@ -53,4 +63,4 @@ Guitarist & pianist.
 - GitHub: [@cleitonaugusto](https://github.com/cleitonaugusto)
 - LinkedIn: [Cleiton Augusto Corrêa Bezerra](https://www.linkedin.com/in/cleiton-augusto-b619435b)
 
-<sub>Open to remote contract / freelance work — Rust, Python, backend, and scientific/technical software.</sub>
+<sub>Open to remote work — **ML-model validation / technical due diligence**, Rust, Python, backend, and scientific/technical software.</sub>
