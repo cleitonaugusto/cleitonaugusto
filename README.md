@@ -15,12 +15,18 @@ I audit whether an ML-for-science model **beats a trivial baseline in a blind ho
 before an investor, a pharma partner, or your own team bets on it. I built the tooling by
 turning it on my *own* research first: it failed **0 of 5**, and I publish that.
 
-**→ [Is your model real?](https://cleitonaugusto.github.io/validation/)**
+**→ [Is your model real?](https://cleitonaugusto.github.io/validation/)** ·
+the tooling: **[validation-gate](https://github.com/cleitonaugusto/validation-gate)**
 
 ---
 
 ### 🔧 Projects
 
+- **[validation-gate](https://github.com/cleitonaugusto/validation-gate)** — a gate that
+  refuses the shortcuts behind irreproducible claims: hash-sealed pre-registration, a
+  mandatory trivial baseline, a blind holdout counted in a ledger so the second run is
+  refused. Four verdicts, not two.
+  `pip install validation-gate`
 - **[nqf-lint](https://github.com/cleitonaugusto/nqf-lint)** — pre-flight linter for
   quantum-chemistry setups. **Rust core + Python bindings (PyO3)**, published on crates.io
   and PyPI.
