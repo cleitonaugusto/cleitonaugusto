@@ -1,11 +1,12 @@
 # Cleiton Augusto Corrêa Bezerra
 
-**Software Engineer — Rust · compiler correctness · Python · Java**
+**Software Engineer — Rust · protocol security · compiler correctness · Python**
 
 Systems analyst in the Brazilian federal court system (15+ years), now working
-on correctness in quantum compilers and Rust tooling. I care about the
-difference between software that *looks* right and software that *is* right:
-real tests, validation against references, and honesty about a program's limits.
+on protocol security, quantum-compiler correctness, and Rust tooling. I care
+about the difference between software that *looks* right and software that *is*
+right: real tests, validation against references, and honesty about a program's
+limits.
 
 ---
 
@@ -20,6 +21,23 @@ I found it with a differential fuzzer I wrote, reduced it to three gates,
 characterized the fault surface across thousands of angles and pointed at the
 failing line. Confirmed by a core maintainer, milestone 2.5.1, fixed in PR
 #16599. I got the root cause wrong on the first try and said so in the thread.
+
+---
+
+### 🛰️ A vulnerability class where a conformant relay strips authentication
+
+Authentication attached to a message gets silently removed when a conformant
+intermediary parses that message and rebuilds it from the fields it understood.
+No attacker at the moment of removal, no error, no warning. I characterized the
+class, then measured it against real software: MAVLink relays, DDS bridges,
+CAN / ISO-TP gateways, SOME/IP gateways, gRPC-JSON transcoders (Envoy,
+grpc-gateway, ConnectRPC), and DICOM de-identification. Several runs argued
+against my own thesis, and I kept the ones that did.
+
+Two IETF Internet-Drafts, a CWE submission, threat-catalogue entries written to
+paste into ISO 21434 and FDA 524B files, and a preprint
+([doi:10.5281/zenodo.21840073](https://doi.org/10.5281/zenodo.21840073)). Latest
+write-up: [DICOM de-identification silently strips image provenance](https://dev.to/cleiton_augusto_/a-conformant-dicom-de-identifier-silently-strips-your-images-signature-7h2).
 
 ---
 
@@ -80,6 +98,7 @@ Guitarist & pianist.
 
 - Email: augusto.cleiton@gmail.com
 - GitHub: [@cleitonaugusto](https://github.com/cleitonaugusto)
+- Writing: [dev.to/@cleiton_augusto_](https://dev.to/cleiton_augusto_)
 - LinkedIn: [Cleiton Augusto Corrêa Bezerra](https://www.linkedin.com/in/cleiton-augusto-b619435b)
 
 <sub>Open to fully remote work — Rust, compiler and correctness tooling, backend,
