@@ -71,9 +71,41 @@ write-up: [DICOM de-identification silently strips image provenance](https://dev
 
 ### 📚 Books
 
+**[Quantum Computing for Rust Developers](https://www.amazon.com/dp/B0HHNQZBD3)**
+— 2nd edition, September 2026. Paperback, 248 pages, ISBN 9798171107352.
+Builds the differential fuzzer above from nothing, in Rust.
+
+The second edition documents nine errors found in the first. The one worth
+naming: I had written a demonstration to expose a sign bug, and the angles I
+picked were the ones where that bug is invisible. The demo passed and proved
+nothing.
+
 **[Quantum Rust: Complete Bundle](https://leanpub.com/b/quantumrustcompletebundlequantum-rust-complete)**
-(Leanpub) — *Quantum Circuit Benchmarking in Rust* and *Quantum Computing for
-Rust Developers*.
+(Leanpub) — the earlier edition, bundled with *Quantum Circuit Benchmarking in
+Rust*.
+
+---
+
+### 🔀 Merged into other people's repositories in 2026
+
+- **[Qiskit #16594](https://github.com/Qiskit/qiskit/issues/16594)** — the
+  transpiler bug above, fixed in 2.5.1
+- **[grpc-gateway #7282](https://github.com/grpc-ecosystem/grpc-gateway/pull/7282)**
+  — security considerations documentation, merged by a maintainer
+- **[Lift #4](https://github.com/rustnew/Lift/pull/4)** — a sign error in a gate
+  decomposition, with a regression test. The first test I wrote passed on the
+  broken code, because the sequence I picked was a palindrome
+- **[NVIDIA CUDA-Q #5192](https://github.com/NVIDIA/cuda-quantum/issues/5192)** —
+  a controlled swap losing its control in OpenQASM 2 translation. I corrected
+  the toffoli wiring in the proposed fix; the implementation NVIDIA shipped uses
+  the corrected version
+- **[Deltakit](https://github.com/Deltakit/deltakit-compile/pull/14)**
+  (Riverlane) — issue assigned to me, pull request open on their compiler.
+  While verifying it I found that comparing detector error models has zero power
+  against a class of fault, reported as
+  [issue #347](https://github.com/Deltakit/deltakit/issues/347) with a
+  four-instruction reproduction and a
+  [DOI](https://doi.org/10.5281/zenodo.22239105)
 
 ---
 
