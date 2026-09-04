@@ -105,7 +105,7 @@ Rust*.
   against a class of fault, reported as
   [issue #347](https://github.com/Deltakit/deltakit/issues/347) with a
   four-instruction reproduction and a
-  [DOI](https://doi.org/10.5281/zenodo.22239105)
+  [DOI](https://doi.org/10.5281/zenodo.22307398)
 
 ---
 
